@@ -32,14 +32,44 @@ p{
 body {
 	background: #222222;
 }
+@keyframes turnX {
+	background: #ff6347;
+}
+	@-webkit-keyframes turnX {
+		background: #ff6347;
+	}
+	@-moz-keyframes turnX {
+		background: #ff6347;
+	}
+@keyframes turnO {
+	background: #b0c4de;
+}
+	@-webkit-keyframes turnO{
+		background: #b0c4de;
+	}
+	@-moz-keyframes turnO {
+		background: #b0c4de;
+	}
+.X {
+	animation: turnX .5s 1;
+		-webkit-animation: turnX .5s 1;
+		-moz-animation: turnX .5s 1;
+}	
+.O {
+	animation: turnO .5s 1;
+		-webkit-animation: turnO .5s 1;
+		-moz-animation: turnO .5s 1;
+}	
 td {
 	height: 100px;
 	width: 100px;
 	border: 5px solid white;
-	background: #dddddd;
-	border-radius: 5px;
-}
-button {
+	/*background: #dddddd;*/
+}	
+.a1Button {
+	border: none;
+}	
+#reset {
 	font-family:'Merriweather Sans';
 	font-size: 14px;
 	color: #222222;

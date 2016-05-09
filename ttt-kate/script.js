@@ -36,6 +36,10 @@ var newGame = function() {
 	}
 }
 
+$('.a1Button').on('click'(function() {
+	$('.O').toggleClass('.a1');
+})
+
 
 // starts new game
 $(document).ready(function() {
