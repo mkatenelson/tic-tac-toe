@@ -1,0 +1,19 @@
+table {
+	height: 350px;
+	width: 350px;
+	border-collapse: collapse;
+	margin: 5px;
+}
+td {
+	height: 114px;
+	width: 114px;
+	border: 2px solid #777777;
+	background: #dddddd;
+}
+button {
+	font-size: 12px;
+	color: #555555;
+	background: #dddddd;
+	padding: 5px 15px;
+	margin: 15px 5px;
+}
