@@ -12,27 +12,40 @@
 	margin: 0 auto;
 	border-spacing: 10px;
 }
-.reset {
+#reset {
 	position: relative;
 	align: left;
+}
+h1{
+	font-family: 'Merriweather Sans';
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	margin: 10px;
+}
+p{
+	font-family: 'Roboto';
+	font-size: 14px;
+	color: white;
+	margin: -10px 10px 0 10px;
 }
 body {
 	background: #222222;
 }
 td {
-	height: 114px;
-	width: 114px;
+	height: 100px;
+	width: 100px;
 	border: 5px solid white;
 	background: #dddddd;
 	border-radius: 5px;
 }
 button {
 	font-family:'Merriweather Sans';
-	font-size: 18px;
+	font-size: 14px;
 	color: #222222;
 	width: 124px;
 	background: white;
-	padding: 0 15px;
+	padding: 2px 15px;
 	margin: 15px 10px;
 	border: 5px solid white;
 	border-radius: 5px;
