@@ -1,3 +1,4 @@
+/* CLASSES */
 .frame {
 	position: static;
 	align: center;
@@ -12,26 +13,16 @@
 	margin: 0 auto;
 	border-spacing: 10px;
 }
+.switchCell {
+	
+}
 #reset {
 	position: relative;
 	align: left;
 }
-h1{
-	font-family: 'Merriweather Sans';
-	font-size: 32px;
-	color: white;
-	text-align: center;
-	margin: 10px;
-}
-p{
-	font-family: 'Roboto';
-	font-size: 14px;
-	color: white;
-	margin: -10px 10px 0 10px;
-}
-body {
-	background: #222222;
-}
+
+
+/* ANIMATIONS */
 @keyframes turnX {
 	background: #ff6347;
 }
@@ -50,6 +41,9 @@ body {
 	@-moz-keyframes turnO {
 		background: #b0c4de;
 	}
+
+
+/* IDs */	
 .X {
 	animation: turnX .5s 1;
 		-webkit-animation: turnX .5s 1;
@@ -59,12 +53,6 @@ body {
 	animation: turnO .5s 1;
 		-webkit-animation: turnO .5s 1;
 		-moz-animation: turnO .5s 1;
-}	
-td {
-	height: 100px;
-	width: 100px;
-	border: 5px solid white;
-	/*background: #dddddd;*/
 }	
 .a1Button {
 	border: none;
@@ -79,4 +67,29 @@ td {
 	margin: 15px 10px;
 	border: 5px solid white;
 	border-radius: 5px;
+}
+
+
+/* ELEMENTS */
+h1{
+	font-family: 'Merriweather Sans';
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	margin: 10px;
+}
+td {
+	height: 100px;
+	width: 100px;
+	border: 5px solid white;
+	/*background: #dddddd;*/
+}
+p{
+	font-family: 'Roboto';
+	font-size: 14px;
+	color: white;
+	margin: -10px 10px 0 10px;
+}
+body {
+	background: #222222;
 }

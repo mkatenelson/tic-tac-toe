@@ -28,18 +28,21 @@ var clearBoard;
 
 // toggles to an X or O in the cell when clicked
 var newGame = function() {
-	$('td').on('click', function() {
-		if (turn === 0) {
-			$(this).text(player1);
+	$('.switchCell').on('click', function() {
+		if (turn = x; ) {
+			$('.turnX').toggleClass('this.switchCell');
+		}
+		else {
+			$('.turnO').toggleClass('this.switchCell');
+		}	
 			checkCell();
 			checkWin();
-			turn === 1;
+			turn =+ 1;
 		}
-	}
-);
+	);
 
-$('.a1Button').on('click', function() {
-	$('.O').toggleClass('.a1');
+$('.cell').on('click', function() {
+	$('.O').toggleClass('.X' || '.O');
 });
 
 
@@ -49,16 +52,36 @@ $(document).ready(function() {
 });
 
 // function that detects what is in each cell after each turn
-checkCell = function() {
-	a1 = $('a1').html();
-	a2 = $('a2').html();
-	a3 = $('a3').html();
-	b1 = $('b1').html();
-	b2 = $('b2').html();
-	b3 = $('b3').html();
-	c1 = $('c1').html();
-	c2 = $('c2').html();
-	c3 = $('c3').html();
+checkCell = function(key) {
+	switch(key) {
+	case 0:
+		a1 = $('a1').html();
+		break;
+	case 1:	
+		a2 = $('a2').html();
+		break;
+	case 2:	
+		a3 = $('a3').html();
+		break;
+	case 3:	
+		b1 = $('b1').html();
+		break;
+	case 4:	
+		b2 = $('b2').html();
+		break;
+	case 5:	
+		b3 = $('b3').html();
+		break;
+	case 6:	
+		c1 = $('c1').html();
+		break;
+	case 7:	
+		c2 = $('c2').html();
+		break;
+	case 8:	
+		c3 = $('c3').html();
+		break;
+	}
 };
 
 

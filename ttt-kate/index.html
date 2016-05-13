@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:700' rel='stylesheet' type='text/css'>
+	<title>Kate's Tic Tac Toe</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css">
-	<script src = "script.js" async></script>
-	<style>
-	</style>
+	<script src = "script.js" "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" async></script>
 </head>
 
 <body>
@@ -16,28 +14,25 @@
 	<br>
 	<p>Click on a box to start the game.</p>
 	<br>
+	
 	<table class='board'>
-
-		<tr class='row'>
-			<td id='a1'>
-				<button class="a1Button"></button>
-			</td>
-			<td id='a2'></td>
-			<td id='a3'></td>
+		<tr>
+			<td class='switchCell' id='a1'></td>
+			<td class='switchCell' id='a2'></td>
+			<td class='switchCell' id='a3'></td>
 		</tr>
 
-		<tr class='row'>
-			<td id='b1'></td>
-			<td id='b2'></td>
-			<td id='b3'></td>
+		<tr>
+			<td class='switchCell' id='b1'></td>
+			<td class='switchCell' id='b2'></td>
+			<td class='switchCell' id='b3'></td>
 		</tr>
 
-		<tr class='row'>
-			<td id='c1'></td>
-			<td id='c2'></td>
-			<td id='c3'></td>
+		<tr>
+			<td class='switchCell' id='c1'></td>
+			<td class='switchCell' id='c2'></td>
+			<td class='switchCell' id='c3'></td>
 		</tr>
-
 	</table>
 
 	<button id='reset'>NEW GAME</button>
