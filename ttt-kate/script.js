@@ -1,3 +1,5 @@
+window.onload = start;
+
 // VARIABLES
 var player1 = 'x'; // turn = 0
 var player2 = 'o'; // turn = 1
@@ -27,18 +29,18 @@ var clearBoard;
 // toggles to an X or O in the cell when clicked
 var newGame = function() {
 	$('td').on('click', function() {
-		if (turn == 0) {
+		if (turn === 0) {
 			$(this).text(player1);
 			checkCell();
 			checkWin();
-			turn == 1;
+			turn === 1;
 		}
 	}
-}
+);
 
-$('.a1Button').on('click'(function() {
+$('.a1Button').on('click', function() {
 	$('.O').toggleClass('.a1');
-})
+});
 
 
 // starts new game
@@ -57,7 +59,7 @@ checkCell = function() {
 	c1 = $('c1').html();
 	c2 = $('c2').html();
 	c3 = $('c3').html();
-}
+};
 
 
 // function that detects a win or tie
@@ -120,24 +122,25 @@ checkWin = function () {
 
 				alert("It's a tie!");
 	}	
-}
+};
 
 
 // 'new game' button clears the board, restarts game, and resets the wins
 var clearBoard =
 $('#reset').click(function() {
-	a1 = $('#a1').text("";)
-	a2 = $('#a2').text("";)
-	a3 = $('#a3').text("";)
-	b1 = $('#b1').text("";)
-	b2 = $('#b2').text("";)
-	b3 = $('#b3').text("";)
-	c1 = $('#c1').text("";)
-	c2 = $('#c2').text("";)
-	c3 = $('#c3').text("";)
+	a1 = $('#a1').text("");
+	a2 = $('#a2').text("");
+	a3 = $('#a3').text("");
+	b1 = $('#b1').text("");
+	b2 = $('#b2').text("");
+	b3 = $('#b3').text("");
+	c1 = $('#c1').text("");
+	c2 = $('#c2').text("");
+	c3 = $('#c3').text("");
 
 	xWin = false;
 	oWin = false;
 	newGame();
 	location.reload(); // don't understand this part
 	});
+};
