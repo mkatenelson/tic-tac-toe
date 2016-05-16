@@ -1,0 +1,74 @@
+/* CLASSES */
+.frame {
+	position: static;
+	align: center;
+	/*border: 1px solid red;*/
+	width: 412px;
+	margin: 0 auto;
+}
+
+.board {
+	height: 412px;
+	width: 412px;
+	/*border-collapse: collapse;*/
+	margin: 0 auto;
+	border-spacing: 10px;	
+}
+
+
+/* IDs */	
+#turnX {
+	background: red;
+	color: white;
+}
+
+#turnO {
+	background: green;
+	color: white;
+}	
+
+#empty {
+	background: black;
+}
+
+#reset {
+	position: relative;
+	align: left;
+	font-family:"Merriweather Sans";
+	font-size: 14px;
+	color: #222222;
+	width: 124px;
+	background: white;
+	padding: 2px 15px;
+	margin: 15px 10px;
+	border: 5px solid white;
+	border-radius: 5px;
+}
+
+
+/* ELEMENTS */
+h1{
+	font-family: "Merriweather Sans";
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	margin: 10px;
+}
+
+td {
+	height: 100px;
+	width: 100px;
+	border: 5px solid white;
+	/*background: #dddddd;*/
+}
+
+p{
+	font-family: "Roboto";
+	font-size: 14px;
+	color: white;
+	margin: -10px 10px 0 10px;
+}
+
+body {
+	background: red;
+}
